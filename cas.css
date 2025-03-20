@@ -1,0 +1,681 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40;
+  padding: 20px;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-header.show {
+  transform: translateY(0);
+}
+
+/* Styles for the navigation links */
+
+.right-side-element-1 {
+  display: flex;
+  align-items: center; /* Align links vertically */
+  
+  
+}
+
+
+.right-side-element-1 a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 24px; /* Set a specific font size */
+  
+  font-weight: 350;
+  margin: 0 10px; /* Add equal margin around each link */
+  padding: 8px 15px; /* Add padding to increase clickable area */
+  border-radius: 10px;
+  transition: color 0.5s ease;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-decoration: none; /* Remove underline by default */
+  font-family: "Quicksand", sans-serif; /* Font style */
+  
+}
+
+/* Updated styles for selected link */
+
+.right-side-element-1 a.active,
+.right-side-element-1 a:hover {
+  
+
+  text-decoration: none; /* Remove underline by default */
+  font-family: "Quicksand", sans-serif; /* Font style */
+}
+
+
+
+
+
+
+
+.right-side-element-1 {
+  display: flex; /* Use flexbox to ensure alignment */
+  align-items: center;
+  margin-left: auto; /* Push it to the far right */
+  margin-right: 50px;
+  padding: 0px 4px; /* Consistent padding */
+  background-color: rgb(34, 40, 44);
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in the total width/height */
+}
+
+
+/* Hover effect for right-side element */
+.right-side-element-1:hover {
+  background-color: #F9D94A ; /* Darken button on hover */
+  
+}
+
+/* Change the text color on hover */
+.right-side-element-1 a {
+color: #F9D94A;
+  transition: color 0.3s ease; /* Smooth transition for color */
+  text-decoration: none; /* Remove underline by default */
+  padding: 12px 15px; /* Consistent padding */
+}
+
+.right-side-element-1 :hover a {
+  color: rgb(34, 40, 44); /* Change text color on hover */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.right-side-element-1 {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 0px 4px;
+  background-color: rgb(34, 40, 44);
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.right-side-element-1 a {
+  
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 350;
+  margin: 0 10px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: color 0.5s ease;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-family: "Quicksand", sans-serif;
+}
+
+.right-side-element-1 a.active,
+.right-side-element-1 a:hover {
+  color: rgb(34, 40, 44);
+}
+
+.right-side-element-1:hover {
+  background-color: #F9D94A;
+}
+
+
+
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+.andre-panot {
+position: relative;
+  left: 47%;
+}
+
+.luis-panot{
+
+  position:relative;
+  left: 30px;
+}
+
+.jojo-panot {
+
+  position: relative;
+ /* Adjust this value to control distance above the carousel */
+  left: 50%;
+  transform: translateX(-50%); /* The initial transform can still be here */
+  font-size: 100px; /* Adjust font size as needed */
+  color: #F9D94A; /* Text color */
+  text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 350;
+ 
+}
+
+.luis-panot2 {
+
+  position:relative;
+  left: 30px;
+}
+
+.jojo-panot2 {
+top:300px;
+  position: relative;
+ /* Adjust this value to control distance above the carousel */
+  left: 83%;
+  transform: translateX(-50%); /* The initial transform can still be here */
+  font-size: 100px; /* Adjust font size as needed */
+  color:#F9D94A; /* Text color */
+  text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+ margin-bottom: 0%;
+}
+
+
+
+
+.lastnapromise {
+
+ position: relative;
+align-self: center;
+top: 20;
+
+
+}
+
+.limp {
+
+  position: relative;
+  /* Adjust this value to control distance above the carousel */
+   left: 15%;
+   top: 200px;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+   text-decoration: none; /* Remove underline by default */
+   font-family: "Quicksand", sans-serif; /* Font style */
+   color:white
+}
+
+.limp5 {
+
+  position: absolute;
+  /* Adjust this value to control distance above the carousel */
+   left: 43%;
+   top: 850px;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+   text-decoration: none; /* Remove underline by default */
+   font-family: "Quicksand", sans-serif; /* Font style */
+   color:white
+}
+
+.limp3 {
+
+  position: relative;
+  /* Adjust this value to control distance above the carousel */
+   left: 55%;
+   top: 385px;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+   text-decoration: none; /* Remove underline by default */
+   font-family: "Quicksand", sans-serif; /* Font style */
+   color:white
+}
+
+.limp4 {
+
+  position: relative;
+  /* Adjust this value to control distance above the carousel */
+   left:45%;
+   top: 700px;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+   text-decoration: none; /* Remove underline by default */
+   font-family: "Quicksand", sans-serif; /* Font style */
+   color:white
+}
+.limp2 {
+
+  position: relative;
+  /* Adjust this value to control distance above the carousel */
+   left: 70%;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+   text-decoration: none; /* Remove underline by default */
+   font-family: "Quicksand", sans-serif; /* Font style */
+   top:-663px;
+   color: white;
+}
+
+
+
+ul.to {
+  
+  position: relative;
+  padding-left: 100px; /* Space on the left */
+  padding-right: 100px; /* Space on the right */
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  background:  linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%), 
+  linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%), 
+  url(pexels-josh-hild-1270765-3859774.jpg); /* Background image */
+    
+  background-size: cover; /* Ensure the image covers the background */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  overflow: hidden; /* Ensure no overflow outside the padding */
+  border:none;
+}
+
+
+
+
+
+/* On hover, change the linear gradient */
+
+
+
+
+.top-right {
+  position: fixed; /* Keeps it anchored to the top-right */
+  top: 10px; /* Adjust as needed */
+  right: 50px; /* Adjust as needed */
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row; /* Align items in a horizontal row */
+  align-items: center; /* Ensure vertical alignment of all items */
+  gap: 10px; /* Space between items */
+}
+
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  opacity: 0; /* Initially hide the elements */
+  animation: fade-in 1s ease-out forwards;
+  transition: transform 0.3s ease; /* Smooth transition on hover in and out */
+}
+
+.navigation a:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.navigation a:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.navigation a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.navigation a:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.navigation a:nth-child(5) {
+  animation-delay: 0.10s;
+}
+.navigation a:nth-child(6) {
+  animation-delay: 0.14s;
+}
+.navigation a:nth-child(7) {
+  animation-delay: 0.18s;
+}
+.navigation a:nth-child(8) {
+  animation-delay: 0.24s;
+}
+
+.navigation a:nth-child(9) {
+  animation-delay: 0.28s;
+}
+.navigation a:nth-child(10) {
+  animation-delay: 0.40s;
+}
+.navigation a:nth-child(11) {
+  animation-delay: 0.50s;
+}
+
+/* Add more selectors for additional items if necessary */
+
+/* Keyframes for fade-in effect */
+@keyframes fade-in {
+  to {
+    opacity: 1; /* Fade the element in */
+  }
+}
+.dropdown1 {
+  display: flex; /* Make dropdown behave like a flex item */
+  align-items: center; /* Align items vertically in the dropdown */
+}
+
+.dropdown1 a {
+  padding: 10px 15px; /* Match padding with the main links */
+  display: flex; /* Aligns the dropdown links as flex items */
+  align-items: center; /* Centers text vertically */
+  height: 40px; /* Set a consistent height for dropdown links */
+}
+/* Apply a zoom effect to the text when hovered */
+.navigation a:hover {
+  transform: scale(1.1); /* Slight zoom */
+  transition: transform 0.4s ease; /* Smooth transition */
+}
+
+/* Define the base style with transition */
+.navigation a {
+  transition: transform 0.3s ease; /* Smooth transition on hover in and out */
+}
+
+/* Apply the zoom effect on hover */
+.navigation a:hover {
+  transform: scale(1.1); /* Slight zoom */
+}
+
+.serviceinvisible {
+
+  position: relative;
+  opacity: 0;
+  top: -700px;
+  text-align: center; 
+
+}
+
+
+.container-xxl {
+  margin-top: 20px;
+}
+.serving {
+  margin-bottom: -20%;
+  display: flex;
+  justify-content: center; /* Centers the .expect-box horizontally */
+  align-items: center; /* Vertically centers the content */
+  width: 100%; /* Ensures it takes up the full width */
+  list-style: none; /* Removes bullet points from <ul> */
+  padding: 0; /* Removes default padding from <ul> */
+  height: auto; /* Let the height of the ul adjust to content */
+  overflow: visible; /* Ensures content outside the parent is visible */
+  
+}
+
+.expect-box {
+  background-color: white;
+  color: black;
+  padding: 20px; /* Padding for content inside the box */
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  max-width: 1200px; /* Max width for the box */
+  width: 80%; /* Adjust width */
+  margin-top: 0%; /* Move the box down so the top half of the box goes outside the <ul> */
+  margin-bottom: 0%;
+  box-sizing: border-box; /* Includes padding and border in the element's dimensions */
+  position: relative; /* Ensure content doesn't get cut off */
+  z-index: 1; /* Ensure it appears above other elements */
+  transform: translateY(-50%); /* Adjusts the box upward by 50%, ensuring half the border is inside */
+}
+
+.expect-box h3 {
+  padding-top: 50px; /* Adjust as needed */
+}
+
+/* Default style for the .expect-box */
+.expect-box {
+  position: relative;
+  width: 100%;
+  border: 3px solid white;
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Apply fade-in animation when the element comes into view */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-in when element enters the viewport */
+.expect-box.in-view {
+  animation: fadeIn 2s forwards;
+}
+
+.expect-box {
+  padding: 5px 20px; /* Adjust padding values as needed */
+}
+
+.expect-box {
+  min-height: 100px; /* Set minimum height */
+  max-height: 600px; /* Set maximum height */
+  
+}
+
+.omg {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: -20px; /* Adjust bottom margin to bring it down */
+}
+
+.memberinvisible {
+
+  position: relative;
+  opacity: 0;
+  top: -200px;
+  text-align: center; 
+
+}
+
+.vertical {
+  position: absolute;
+  width: 2px; /* Thickness of the line */
+  height: 50px; /* Match the logo's height */
+
+  z-index: 999;
+}
+
+.streamerinvisible {
+
+  position: relative;
+  opacity: 0;
+  top: 350px;
+  text-align: center; 
+
+}
+
+.introduction-box {
+  top: 50px;
+  background-color: white;
+  color: black;
+ padding: 0%;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  font-family: "Quicksand", sans-serif;
+  height: 520px; /* Set the desired height */
+
+  
+  max-width: 95%; /* Max width for the box */
+  width: 100%; /* Adjust width */
+  margin-top: 0%; /* Move the box down so the top half of the box goes outside the <ul> */
+  margin-bottom: 10%;
+  box-sizing: border-box; /* Includes padding and border in the element's dimensions */
+  position: relative; /* Ensure content doesn't get cut off */
+  z-index: 69; /* Ensure it appears above other elements */
+ left: 50px;
+}
+
+.outline-box{
+  top: 50px;
+  background-color: white;
+  color: black;
+ padding: 0%;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  font-family: "Quicksand", sans-serif;
+  height: 520px; /* Set the desired height */
+
+  
+  max-width: 43%; /* Max width for the box */
+  width: 100%; /* Adjust width */
+  margin-top: 0%; /* Move the box down so the top half of the box goes outside the <ul> */
+  margin-bottom: 10%;
+  box-sizing: border-box; /* Includes padding and border in the element's dimensions */
+  position: relative; /* Ensure content doesn't get cut off */
+  z-index: 69; /* Ensure it appears above other elements */
+ left: 85px;
+
+}
+.prom-box{
+
+
+  
+  color: black;
+ padding: 0%;
+  
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  font-family: "Quicksand", sans-serif;
+  height: 10%; /* Set the desired height */
+
+  
+  max-width: 35%; /* Max width for the box */
+  width: 100%; /* Adjust width */
+  margin-top: 0%; /* Move the box down so the top half of the box goes outside the <ul> */
+  margin-bottom: 10%;
+  box-sizing: border-box; /* Includes padding and border in the element's dimensions */
+  position: relative; /* Ensure content doesn't get cut off */
+  z-index: 69; /* Ensure it appears above other elements */
+ left: 800px;
+ top: -20px;
+}
+
+
+ul.timelinej {
+  position: relative;
+  padding-left: 100px; /* Space on the left */
+  padding-right: 100px; /* Space on the right */
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  background:  linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%), 
+  linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%), 
+    url(pexels-josh-hild-1270765-3480390.jpg); /* Background image */
+  background-size: cover; /* Ensure the image covers the background */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  overflow: hidden; /* Ensure no overflow outside the padding */
+}
+
+ul.reck{
+background-color: black;
+
+}
+
+.limp {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.all {
+  position: relative;
+  max-width: 30%; /* Controls the width of the text */
+  vertical-align: middle;
+  line-height: 1.6; /* Adds space between lines of text */
+  color:white;
+top: 200px;
+right: -15%;
+}
+
+.all2 {
+  position: relative;
+  max-width: 30%; /* Controls the width of the text */
+  vertical-align: middle;
+  line-height: 1.6; /* Adds space between lines of text */
+  color:white;
+top: 388px;
+left: 55%;
+}
+.all3 {
+  position: absolute;
+  max-width: 30%; /* Controls the width of the text */
+  text-align: center;
+  color:white;
+top: 900px;
+right: 35%;
+}
+.carousel-inner2 img {
+width:auto;
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.smaller-image {
+ 
+  position: relative; /* Allows us to use 'top' */
+  top: 125px; /* Moves the image 50px down */
+max-height: 100%;
+max-width: 300px; /* Adjust to your desired size */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.smaller-image2 {
+  max-width: 70%; /* Adjust to your desired size */
+  position: relative; /* Allows us to use 'top' */
+  top: 115px; /* Moves the image 50px down */
+max-height: 65%;
+
+}
+.smaller-image3 {
+ 
+  position: relative; /* Allows us to use 'top' */
+  top: 125px; /* Moves the image 50px down */
+max-height: 100%;
+max-width: 300px; /* Adjust to your desired size */
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-slider-container{
+
+  border:none;
+  overflow: hidden; 
+  box-shadow: none;
+z-index: -99;
+
+}
+
+.carousel-item{
+  position:relative;
+}
+
+ul.car {
+  
+  position: relative;
+  padding-left: 100px; /* Space on the left */
+  padding-right: 100px; /* Space on the right */
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  background:  linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%), 
+  linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%), 
+  url(pexels-josh-hild-1270765-12373451.jpg); /* Background image */
+  background-size: cover; /* Ensure the image covers the background */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  overflow: hidden; /* Ensure no overflow outside the padding */
+  border:none;
+}

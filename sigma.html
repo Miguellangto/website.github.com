@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifelabs Group 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Danfo&family=Dangrek&family=Days+One&family=Kablammo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+
+    
+  
+<div class="fixed-header">
+
+    <!-- Navigation Links (aligned to top right corner) -->
+    
+    <div class="navigation-links">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="eg1.html">Q1</a>
+       
+      </div>
+  
+      <div class="dropdown">
+          <a href="eg2.html">Q2</a>
+         
+      </div>
+  
+      <div class="dropdown">
+          <a href="eg3.html">Q3</a>
+         
+      </div>
+  
+      <div class="dropdown">
+          <a href="eg4.html">Q4</a>
+          
+
+          <a href="eg5.html" onclick="loadPage('eg5.html')">IPBA</a>
+     
+          <div class="dropdown">
+            <a href="sigma.html">Contact</a>
+            </div>
+         
+      </div>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search...">
+      <button onclick="performSearch()">Search</button>
+      
+  </div>
+  <div class="right-side-element a">
+    <a href="index.html" onclick="loadPage('index.html')">Group 1</a>
+  </div>
+  
+</div>
+
+<div class="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+   
+    <div class="carousel-inner">
+      <div class="carousel-caption d-block">
+        <div class="container2">
+       
+        <h3 id="gagokaba" class="gagokaba">CONTACT US</h3>
+      </div>
+      </div>
+
+      <!-- First slide -->
+      <div class="carousel-item active">
+        <img src="black 2.jpg" class="d-block w-100" alt="Image 1">
+        
+        </div>
+      </div>
+    </div> <!-- Closing carousel-inner div -->
+  </div> <!-- Closing carousel div -->
+</div>
+
+
+<div class="social-icons1">
+  <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-twitter"></i></a>
+  <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+  <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-youtube"></i></a>
+  <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+</div>
+
+
+
+
+
+</div>
+<!-- Footer -->
+<footer class="footer mt-0 py-3 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Company -->
+      <div class="col-md-3">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Our Services</a></li>
+          <li><a href="contacts.html">Reservation</a></li>
+        </ul>
+      </div>
+       <div class="col-md-3">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt me-2"></i>123 Marikina Heights, Philippines</li>
+          <li><i class="fas fa-phone-alt me-2"></i>+012 345 67890</li>
+          <li><i class="fas fa-envelope me-2"></i>info@example.com</li>
+        </ul>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <!-- Column 3: Schedule -->
+      <div class="col-md-3">
+        <h5>Schedule</h5>
+        <ul class="list-unstyled">
+          <li>Monday - Friday: 9AM - 6PM</li>
+          <li>Saturday: 10AM - 4PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+      <!-- Column 4: Empty -->
+      <div class="col-md-3">
+        <!-- This column can be left empty or filled with additional content -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+<button id="backToTopBtn" title="Back to top">Back To Top</button>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.4.0/confetti.browser.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="cas.js"></script>
+<script>
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add the 'animate' class to start the animation when the image is in view
+        entry.target.classList.add('animate'); 
+        
+        // Stop observing once the animation has started
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, {
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  });
+
+  const image = document.querySelector('.introduction-image');
+  observer.observe(image); // Start observing the image element
+</script>
+
+
+</body>
+</html>
