@@ -1,0 +1,1706 @@
+/* Basic reset for html and body */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: 'ITC Mendoza';
+  src: url('path-to-your-font/ITCMendoza.woff2') format('woff2'),
+       url('path-to-your-font/ITCMendoza.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html, body { overflow-x: hidden; /* Hide horizontal overflow */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  width: 100%;  }
+
+
+  .body5{
+   
+  max-height:600px; 
+  }
+
+
+/* Flexbox wrapper to push footer to bottom */
+.wrapper {
+  display: flex;
+  min-height: 100vh; /* Full viewport height */
+  flex-direction: column;
+}
+
+
+
+
+/*  content area */
+main {
+  flex: 1; /* Pushes footer to the bottom */
+  max-width: 800px; /* or your preferred max width */
+  margin: auto; /* centers the content */
+  padding: 20px; /* adds padding around the content */
+  font-family: "Quicksand", sans-serif; /* sets a cleaner font */
+  margin-top: 80px; /* Adjust this value based on your header’s height */
+  margin-bottom: 0; /* Reset bottom margin for proper footer alignment */
+  
+}
+
+/* Center the text inside h1 */
+h1 {
+  text-align: center;
+}
+
+/* Styles for the fixed header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40; /* Set a color here */  
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px; /* Adjust this value as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+/* Styles for the navigation links */
+.navigation-links,
+.right-side-element {
+  display: flex;
+  align-items: center; /* Align links vertically */
+  
+  
+}
+
+.navigation-links a,
+.right-side-element a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 24px; /* Set a specific font size */
+  
+  font-weight: 350;
+  margin: 0 10px; /* Add equal margin around each link */
+  padding: 8px 15px; /* Add padding to increase clickable area */
+  border-radius: 10px;
+  transition: color 0.5s ease;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-decoration: none; /* Remove underline by default */
+  font-family: "Quicksand", sans-serif; /* Font style */
+  
+}
+
+/* Updated styles for selected link */
+
+.right-side-element a.active,
+.right-side-element a:hover {
+  
+
+  text-decoration: none; /* Remove underline by default */
+  font-family: "Quicksand", sans-serif; /* Font style */
+}
+
+.navigation-links a.active,
+.navigation-links a:hover {
+  color: #F9D94A; /* Text color */
+  text-decoration: none; /* Remove underline by default */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  
+}
+
+
+
+
+
+.right-side-element {
+  display: flex; /* Use flexbox to ensure alignment */
+  align-items: center;
+  margin-left: auto; /* Push it to the far right */
+  margin-right: 50px;
+  padding: 8px 12px; /* Consistent padding */
+  background-color: rgb(34, 40, 44);
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in the total width/height */
+}
+
+
+/* Hover effect for right-side element */
+.right-side-element:hover {
+  box-shadow: 0px 0px 15px rgb(255, 234, 0);
+  
+}
+
+/* Change the text color on hover */
+.right-side-element a {
+  color: whitesmoke;
+  transition: color 0.3s ease; /* Smooth transition for color */
+  text-decoration: none; /* Remove underline by default */
+  padding: 12px 15px; /* Consistent padding */
+}
+
+.right-side-element:hover a {
+  color: rgb(255, 255, 255); /* Change text color on hover */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+
+
+
+/* Style the button */
+#backToTopBtn {
+  
+  position: fixed; /* Fixed at the bottom-right corner */
+  bottom: 20px;
+  right: 20px;
+  z-index: 99; /* On top of other elements */
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* Initial opac/* Right-side element styling */
+.right-side-element {
+  margin-right: 50px;
+  background-color: #F9D94A;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+}
+
+/* Hover effect for right-side element */
+.right-side-element:hover {
+  background-color: rgb(0, 0, 0); /* Darken button on hover */
+}
+
+/* Change the text color on hover */
+.right-side-element a {
+  color: whitesmoke;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.right-side-element:hover a {
+  color: #F9D94A; /* Change text color on hover */
+}
+
+  visibility: hidden; /* Hidden initially */
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Slower fade in/out effect */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+}
+
+#backToTopBtn.show {
+  opacity: 1; /* Full opacity */
+  visibility: visible; /* Make it visible */
+}
+
+#backToTopBtn:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+/* Footer styles */
+/* Footer styles */
+.footer {
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* White text color */
+  position: relative;
+  width: 100%; /* Ensure footer spans the full width */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  bottom: 0; /* Align to the bottom of the container */
+  padding: 0;
+  margin-top: 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Center the container inside the footer */
+.footer .container {
+  max-width: 1140px; /* Set a max width for the content inside */
+  margin: 0 auto; /* Center the container */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  
+
+}
+
+.footer .row {
+  margin-left: 0; /* Remove default left margin */
+  margin-right: 0; /* Remove default right margin */
+}
+
+.footer .col-md-3 {
+  padding: 0;
+  margin: 0;
+}
+
+.footer .btn-social {
+  border: 1px solid #ffffff; /* White border for social buttons */
+  color: #ffffff; /* White icon color */
+}
+
+.footer .btn-social:hover {
+  background-color: #F9D94A; /* White background on hover */
+}
+
+
+/* Center the text inside h1 */
+h1 {
+  text-align: center;
+}
+
+/* Style for active navigation link */
+.active {
+  color: orange; /* Highlight color */
+  font-weight: bold; /* Optional: makes the text bold */
+}
+
+/* Styles for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease 2s, visibility 0s 2s; /* Delay visibility change */
+  position: absolute; /* Positioned relative to the dropdown */
+  background-color: #ffffff; /* Background for clarity */
+  min-width: 120px; /* Minimum width for the dropdown */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1; /* Ensure it appears above other elements */
+  border: 1px solid #ccc; /* Outline for the parent dropdown */
+  border-radius: 4px; /* Rounded corners */
+  width: 130px;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+  color: #333; /* Dark gray text color */
+  padding: 8px 12px; /* Reduced padding for a smaller menu */
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Use flexbox for consistent sizing */
+  justify-content: space-between; /* Space between text and number */
+  font-size: 12px; /* Smaller font size */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown */
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Make it visible */
+}
+
+/* Change the background color of the links on hover */
+.dropdown-content a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #000; /* Darker text color on hover */
+}
+
+/* Add some transition to the dropdown itself for a smoother effect */
+.dropdown-content {
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for smooth appearance */
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Make it visible */
+}
+
+
+
+
+/* Mind map image styles */
+.mindmap {
+  width: 100%; /* makes the images responsive */
+  max-width: 600px; /* set max width to avoid excessive sizes */
+  height: auto; /* maintains aspect ratio */
+  margin: 10px 0; /* adds vertical space around images */
+}
+
+/* Text styles */
+h1, h2, h6 {
+  margin-top: 20px; /* consistent top margin for headers */
+  margin-bottom: 10px; /* bottom margin for spacing */
+}
+
+p {
+  margin-bottom: 15px; /* adds space between paragraphs */
+  line-height: 1.6; /* improves readability */
+}
+
+.container img {
+  width: 25%; /* Make the image take full width of its container */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.quicksand-text {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Adjust the weight as needed */
+  font-style: normal;
+}
+
+.wider {
+  width: 80%; /* Adjust this value as needed */
+  height: auto; /* Maintains aspect ratio */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0;  /* Remove default margin */
+}
+
+nav > ul > li {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Space between main menu items */
+}
+
+.nested-dropdown {
+  display: none; /* Hide the nested dropdowns initially */
+  position: absolute; /* Position them absolutely */
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+   left: 100%; /* Shift to the right of the parent */
+  top: 10px; /* Adjust this to control vertical position, slightly below the parent */
+}
+
+nav ul li:hover > .nested-dropdown {
+  display: block; /* Show the nested dropdown on hover */
+}
+
+/* Optional: Add styles for links */
+nav a {
+  text-decoration: none;
+  color: #000; /* Link color */
+  padding: 10px; /* Padding around links */
+  display: block; /* Make links fill the space */
+}
+
+.nested-dropdown a:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+
+/* Child Dropdown */
+.child-dropdown {
+  display: none; /* Hidden by default */
+  position: absolute; /* Allows it to appear as a dropdown */
+  top: 10px; /* Align to the top of the parent */
+  left: 100%; /* Position to the right of the parent */
+  background-color: #fff; /* For visibility */
+  border: 1px solid #ccc; /* Outline for the child dropdown */
+  border-radius: 4px; /* Optional: rounded corners */
+  z-index: 1; /* Ensure it appears on top */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Initially hidden */
+  width: 167px; /* or any other value to include the necessary space */
+  
+}
+
+/* Show child dropdown when hovering over the parent item */
+.dropdown-content li:hover > .child-dropdown {
+  display: block; /* Show child dropdown */
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Make it visible */
+  transition:  3s ease,
+ 
+}
+
+/* Change background color of the links on hover */
+.dropdown-content a:hover,
+.child-dropdown a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #000; /* Darker text color on hover */
+}
+
+.image-container {
+  text-align: center; /* Center the content horizontally */
+}
+img {
+  max-width: 100%; /* Ensure the image scales responsively */
+  height: auto; /* Maintain aspect ratio */
+
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Initially hidden */
+  transform: translateY(-10px); /* Move dropdown slightly up */
+  transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease; /* Smooth transition for opacity and transform */
+}
+
+/* Show the dropdown with delay on hover */
+.dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown */
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Make it visible */
+  transform: translateY(0); /* Slide down to original position */
+  transition-delay: 0s; /* Remove the delay on hover */
+}
+
+/* Optional: When leaving the dropdown, add transition for hiding */
+.dropdown-content {
+  transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease;
+}
+
+/* Ensuring the dropdown hides after the opacity transition */
+.dropdown-content.hide {
+  opacity: 0; /* Fade out */
+  visibility: hidden; /* Hide */
+  transform: translateY(-10px); /* Slide up */
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.text-container {
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  top: 50%; /* Center vertically */
+  left: 20px; /* Position from the left side */
+  transform: translateY(-50%); /* Center text vertically */
+  color: white; /* Set text color */
+  z-index: 10; /* Ensure it appears above the carousel */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  padding: 0;
+  margin: 0;
+}
+
+.carousel {
+  width: 100%;
+  height: 100vh; /* Set height as needed */
+  overflow: hidden; /* Prevent overflow */
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+.carousel-item {
+  height: 100vh; /* Adjust height for the carousel */
+  padding: -20;
+  margin: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: relative; /* Ensure full coverage of images */
+  padding: 0;
+  margin: 0;
+}
+
+
+
+  .right-side-element {
+    font-size: 16px; /* Even smaller font size for mobile */
+    padding: 0px 5px; /* Adjust padding for a smaller clickable area */
+
+
+
+
+  } .search-bar {
+    display: none; /* Completely hides the search bar */
+}
+
+
+
+#backToTopBtn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#backToTopBtn.fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTopBtn.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.audio-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text if needed */
+  margin-top: 20px; /* Add space above the audio element */
+}
+
+/* Define the slide-in animation */
+
+.carousel-caption h3 {
+  position: absolute;
+  top: -450px; /* Initial position above the carousel */
+  left: 16%;
+  transform: translateX(-50%) translateY(100%); /* Start below the container */
+  font-size: 100px;
+  color: #F9D94A;
+  text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Days One", sans-serif;
+  font-weight: 350;
+  opacity: 0; /* Start as invisible */
+  animation: fadeInFromBottom 1s forwards; /* Apply the animation */
+  animation-delay: 0.5s; /* Add delay before the animation starts */
+}
+
+/* Define the fade-in from bottom animation */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10%); /* Start below the container */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* End at its normal position */
+  }
+}
+
+
+.carousel-caption h1 {
+  position: absolute;
+  top: -450px; /* Initial position above the carousel */
+  left: 16%;
+  transform: translateX(-50%) translateY(100%); /* Start below the container */
+  font-size: 100px;
+  color: #F9D94A;
+  text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Days One", sans-serif;
+  font-weight: 350;
+  opacity: 0; /* Start as invisible */
+  animation: fadeInFromBottom 1s forwards; /* Apply the animation */
+  animation-delay: 0.5s; /* Add delay before the animation starts */
+}
+
+/* Define the fade-in from bottom animation */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10%); /* Start below the container */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* End at its normal position */
+  }
+}
+
+
+
+.container2 {
+  display: inline-block;
+  max-width: 150px; /* Adjust as needed */
+  overflow: hidden; /* Hide overflow if content exceeds max-width */
+  display: flex; /* Enables flex layout */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+
+
+
+
+
+
+
+
+/* Style for the Start button */
+.btn-switch {
+  position: absolute;
+  background-color: #343a40; /* Button color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size */
+  font-family: "Quicksand", sans-serif; /* Font style */
+  border: 2px solid #343a40; /* Border for button */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  left: 30%;
+  top: 65%;
+  z-index: 999; /* Ensure it's above other elements */
+  pointer-events: all; 
+
+  animation: fade-up 2s ease-out forwards; /* Apply fade-up animation */
+}
+
+
+/* Keyframes for fade-up effect */
+@keyframes fade-up {
+
+  from{
+
+    opacity: 0; /* Initially hide the button */
+    transform: translateY(20%); /* Start from underneath */
+  }
+  to {
+    opacity: 1; /* Fade the element in */
+    transform: translateY(0); /* Move to its original position */
+  }
+}
+
+
+.btn-switch:hover {
+  background-color: rgb(255, 246, 74); /* Darken button on hover */
+  color:black; /* Change text color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+
+/* Style for the dropdown container */
+.carousel-dropdown {
+  position: relative;
+  display: inline-block; /* Positions the dropdown inline */
+  margin-left: 20px; /* Space between the Start button and dropdown */
+}
+
+/* Dropdown button style */
+.carousel-dropbtn {
+  background-color: f2e76a; /* Same color as Start button */
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid #343a40;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.carousel-dropbtn:hover {
+  background-color: #343a40;
+  color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.carousel-dropdown-content {
+  display: none; /* Hide by default */
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+}
+
+/* Dropdown links inside the dropdown */
+.carousel-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Change the color of dropdown links on hover */
+.carousel-dropdown-content a:hover {
+  background-color:white;
+  color: black;
+}
+
+/* Show the dropdown when hovering over the dropdown container */
+.carousel-dropdown:hover .carousel-dropdown-content {
+  display: block;
+}
+
+/* Make the dropdown and buttons responsive */
+@media (max-width: 768px) {
+  .btn-container {
+    position: relative; /* Change to relative positioning for smaller screens */
+    transform: none; /* Remove the translate for centering */
+    top: 0; /* Reset vertical position */
+    left: 0; /* Reset horizontal position */
+    text-align: center; /* Center the buttons */
+  }
+
+  .carousel-dropdown {
+    margin-left: 0; /* Remove margin between buttons */
+    margin-top: 10px; /* Add margin between buttons */
+  }
+
+  .btn-switch,
+  .carousel-dropbtn {
+    width: 100%; /* Make buttons span the full width */
+    box-sizing: border-box; /* Ensure buttons stay within the container */
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+.carousel img {
+    position: relative; /* Allows translation */
+    transition: transform 0.2s ease-out; /* Optional: For smooth movement */
+  
+  /* Adds smooth transition */
+}
+
+
+button, a, .btn-switch, .carousel-dropbtn {
+  text-decoration: none; /* Remove underline by default */
+}
+
+button:hover, a:hover, .btn-switch:hover, .carousel-dropbtn:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+.social-icons {
+  position: relative;
+  gap: 10px;
+  margin-top: 10px;
+  padding-right: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+  width: 200px;
+  top: -265px;
+  left: 14%;
+  transform: translate(-50%, 50%);
+  z-index: 9;
+  opacity: 0; /* Start as invisible */
+  animation: revealFromLeft 2s forwards; /* Apply the reveal animation */
+  animation-delay: 0.5s; /* Add delay before starting the animation */
+}
+
+/* Define the reveal animation */
+@keyframes revealFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%); /* Start from left (off-screen) */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Move to its normal position */
+  }
+}
+
+
+
+.social-icons .btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Circle size */
+  height: 40px;
+  border-radius: 50%; /* Make the button circular */
+  border: 2px solid #ffffff; /* Initial border color */
+  background-color: transparent; /* Initial background color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.social-icons .btn-social i {
+  font-size: 18px; /* Icon size */
+  color: #fff; /* Initial icon color */
+  transition: color 0.3s ease;
+}
+
+/* On hover, change the icon color to black and the background to yellow */
+.social-icons .btn-social:hover {
+  background-color: #F9D94A; /* Background color when hovered */
+  border-color: #F9D94A; /* Optional: change border to yellow */
+}
+
+.social-icons .btn-social:hover i {
+  color: #000; /* Icon color on hover */
+}
+
+
+.social-icons a {
+
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust to control the size of the circle */
+  height: 40px; /* Adjust to match the width */
+  border-radius: 50%;
+  border: 2px solid #ffffff; /* Optional: color and thickness of border */
+
+}
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for all anchor links */
+}
+
+
+
+
+
+.introduction {
+
+  position: relative;
+  top: -300px; /* Adjust this value to control distance above the carousel */
+  left: 92%;
+  transform: translateX(-50%); /* The initial transform can still be here */
+  font-size: 24px; /* Adjust font size as needed */
+  color: black; /* Text color */
+  text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+ 
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Start fully hidden */
+  }
+  100% {
+    transform: translateX(-40%); /* End at its normal position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+.introduction-image {
+  position: relative;
+  top: 100px; /* Adjust as needed */
+  width: 30em;
+  height: 20em;
+  transform: translateX(-100%); /* Initially off-screen */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition for visibility */
+}
+
+/* When the 'animate' class is added, start the animation */
+.introduction-image.animate {
+  animation: slide 3s ease-out forwards;
+}
+
+
+
+
+.introduction-main {
+
+  flex: 1; /* Pushes footer to the bottom */
+  max-width: 800px; /* or your preferred max width */
+  margin: auto; /* centers the content */
+  padding: 20px; /* adds padding around the content */
+  font-family: "Quicksand", sans-serif; /* sets a cleaner font */
+  margin-top: -20px; /* Adjust this value based on your header’s height */
+  margin-bottom: -100px; /* Reset bottom margin for proper footer alignment */
+  
+}
+
+.introduction-invisible {
+
+  position: relative;
+  opacity: 0;
+  top: -50px;
+  text-align: center; 
+
+}
+
+.timeline ul {
+background: #000000;
+  padding: 50px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;                               /* Thin line */
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgb(94, 106, 114);
+  box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, width 0.3s ease;
+  pointer-events: none;                     /* Disable interaction on the line */
+}
+
+/* The only interactive part */
+.timeline ul li .expandable {
+  pointer-events: auto;                     /* Make this part trigger the feature */
+  background: rgb(34, 40, 44);
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+  transition: all 0.3s ease;
+  pointer-events: none;                     /* Circle not interactive */
+}
+
+
+
+
+/* Initial styles for the div inside li */
+/* Initial styles for the div inside li */
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: rgb(34, 40, 44);
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  
+  height: 120px; /* Use height instead of max-height */
+  opacity: 1; /* Make sure the element is visible */
+
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Keyframes for expanding */
+@keyframes expand {
+  0% {
+    height: 120px;
+    padding: 15px;
+    opacity: 1;
+  }
+  100% {
+    height: 300px; /* Expanded height */
+    padding: 20px; /* Increased padding */
+    opacity: 1; /* Ensure the element remains visible */
+  }
+}
+
+/* Keyframes for collapsing */
+@keyframes collapse {
+  0% {
+    height: 300px; /* Expanded height */
+    padding: 20px; /* Increased padding */
+    opacity: 1;
+  }
+  100% {
+    height: 120px;
+    padding: 15px;
+    opacity: 1;
+  }
+}
+
+/* Apply the expand animation on hover */
+.timeline ul li:hover div {
+  animation: expand 0.5s forwards; /* Expand animation */
+}
+
+/* Apply the collapse animation when not hovering */
+.timeline ul li div {
+  animation: collapse 0.5s forwards; /* Collapse animation */
+}
+
+
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgb(34, 40, 44) transparent  transparent  ;
+  
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+  
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgb(34, 40, 44) ;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+
+  margin-bottom: 8px;
+  font-family: "Quicksand", sans-serif; /* Font style */
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.fart, .farti, .farto {
+color: #F9D94A;
+font-family: "Quicksand", sans-serif; /* Font style */
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+} 
+ 
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background 5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: rgb(34, 40, 44);
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.timelinej {
+  font-family: "Quicksand", sans-serif; /* Font style */
+margin: 0%;  
+color:white;
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
+
+.tangina {
+left: 39.5%;
+position: relative;
+} 
+
+
+/* Base style for the link */
+.navigation a {
+  position: relative;
+  color: black; /* Text color */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s ease; /* Optional: color change on hover */
+}
+
+/* Style for the moving underline using the ::before pseudo-element */
+.navigation a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Thickness of the underline */
+  background-color: #F9D94A; /* Color of the underline */
+  transform: scaleX(0); /* Start with underline hidden */
+  transform-origin: bottom right; /* Start animation from the right */
+  transition: transform 0.1s ease; /* Smooth transition */
+}
+
+/* Show underline on hover */
+.navigation a:hover::before {
+  transform: scaleX(1); /* Scale underline to full width */
+  transform-origin: left; /* Animate from left to right */
+}
+
+.timelinej {
+  display: flex;
+  flex-direction: column; /* Or row, depending on your desired layout */
+}
+
+section {
+  border: 1px solid #ccc; /* Light gray border */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Add some padding inside the border */
+  margin: 20px 0; /* Space between sections */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background for clarity */
+}
+
+.ipbasection {
+  position: relative;
+ width: 1200px;
+ left:-220px;
+ height:500px;
+ top:-670px;
+   padding: 20px; /* Add some padding inside the border */
+   margin: 20px 0; /* Space between sections */
+   border-radius: 50px; /* Rounded corners */
+   background-color: #000000f8; /* White background for clarity */
+   opacity: 50%;
+   box-shadow:0 0 12px rgb(255, 255, 4);
+   z-index: -45;
+ }
+
+/* Child Dropdown */
+.child-dropdown12 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Allows it to appear as a dropdown */
+  top: 105px; /* Align to the top of the parent */
+  left: 100%; /* Position to the right of the parent */
+  background-color: #fff; /* For visibility */
+  border: 1px solid #ccc; /* Outline for the child dropdown */
+  border-radius: 4px; /* Optional: rounded corners */
+  z-index: 1; /* Ensure it appears on top */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Initially hidden */
+  width: 167px; /* or any other value to include the necessary space */
+  
+}
+
+/* Show child dropdown when hovering over the parent item */
+.dropdown-content li:hover > .child-dropdown12 {
+  display: block; /* Show child dropdown */
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Make it visible */
+  transition:  3s ease,
+ 
+}
+
+/* Child Dropdown */
+.child-dropdown14 {
+  display: none; /* Hidden by default */
+  position: absolute; /* Allows it to appear as a dropdown */
+  top: 165px; /* Align to the top of the parent */
+  left: 100%; /* Position to the right of the parent */
+  background-color: #fff; /* For visibility */
+  border: 1px solid #ccc; /* Outline for the child dropdown */
+  border-radius: 4px; /* Optional: rounded corners */
+  z-index: 1; /* Ensure it appears on top */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Initially hidden */
+  width: 167px; /* or any other value to include the necessary space */
+  
+}
+
+/* Show child dropdown when hovering over the parent item */
+.dropdown-content li:hover > .child-dropdown14 {
+  display: block; /* Show child dropdown */
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Make it visible */
+  transition:  3s ease,
+ 
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Distributes cards to the left and right */
+  height: auto;
+  width:1500px; /* Ensures the container takes up the full width */
+  padding: 200px; /* Optional padding to prevent cards from touching the edges */
+  margin-left: -370px;
+  margin-top: -200px;
+  
+}
+
+.card {
+ 
+  width: 300px;  /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background:#53525b !important;
+
+}
+
+
+
+ 
+
+
+
+.card:hover {
+  transform: scale(1.1);
+  color:#000000;
+  background:#F9D94A !important;
+
+}
+
+.expanded-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color:#333;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.expanded-card.active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  
+}
+
+
+
+.content {
+  padding: 20px;
+}
+
+.card-paragraph {
+  position: absolute;
+  max-width: 30%; /* Controls the width of the text */
+  text-align: center;
+  color:white;
+top: 400px;
+right: 35%;
+ 
+animation: slide-up 1s ease-out forwards; /* Apply animation */
+}
+  /* Keyframes for the sliding animation */
+  @keyframes slide-up {
+    0% {
+        transform: translateY(100%); /* Start from below the screen */
+        opacity: 0; /* Invisible */
+    }
+    50% {
+        transform: translateY(0); /* Move to its final position */
+        opacity: 0; /* Still invisible while passing through the space */
+    }
+    100% {
+        transform: translateY(0); /* End at the normal position */
+        opacity: 1; /* Fully visible once it has passed through */
+    }
+}
+
+
+
+
+/* General styles for the expanded card */
+#expandedCard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#expandedCard.active {
+  display: flex;
+}
+
+#expandedContent {
+  background-color: #E9EBEE;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1500px;
+  width: 100%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+#backButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color:transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Specific styles for headings and paragraphs */
+#expandedContent h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#expandedContent p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#expandedCard {
+  display: none; /* Initially hidden */
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* When the expanded card is active */
+#expandedCard.active {
+  display: block; /* Show the expanded card */
+  transform: scaleY(1);
+  opacity: 1;
+}
+/* Images inside expanded content */
+#expandedContent img {
+  max-width: 600px;
+  max-height: 900px;
+  width: auto;
+  height: auto;
+  margin-left:40%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color:#333;
+  background-image: linear-gradient(to bottom, rgb(33, 36, 39), #222528);
+  z-index: -999;
+  height: -100px;
+}
+
+.ipba5{
+  position: relative;
+  top:230px ;
+  margin-top:-30px;
+}
+
+.member1,.member2,.member3,.member4,.member5,.member6{
+
+position: relative;
+border-radius: 20px;
+z-index: 99999;
+}
+
+.member1 {
+  position: absolute; /* Position relative to the parent div */
+  top: 10px; /* Adjust as needed */
+  left: 290px; /* Adjust as needed */
+  width: 100%; /* Ensure it fits the div */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Apply rounded corners */
+  z-index: 9; /* Ensure it's on top */
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.member2 {
+  position: absolute; /* Position relative to the parent div */
+  top: 10px; /* Adjust as needed */
+  left: 290px; /* Adjust as needed */
+  width: 100%; /* Ensure it fits the div */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Apply rounded corners */
+  z-index: 9; /* Ensure it's on top */
+  max-width: 90px;
+  max-height: 90px;
+  height:90px;
+}
+
+.member3 {
+  position: absolute; /* Position relative to the parent div */
+  top: 10px; /* Adjust as needed */
+  left: 290px; /* Adjust as needed */
+  width: 100%; /* Ensure it fits the div */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Apply rounded corners */
+  z-index: 9; /* Ensure it's on top */
+  max-width: 90px;
+  max-height: 120px;
+  height: 90px;
+}
+
+.member4 {
+  position: absolute; /* Position relative to the parent div */
+  top: 10px; /* Adjust as needed */
+  left: 290px; /* Adjust as needed */
+  width: 100%; /* Ensure it fits the div */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Apply rounded corners */
+  z-index: 9; /* Ensure it's on top */
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.member5 {
+  position: absolute; /* Position relative to the parent div */
+  top: 10px; /* Adjust as needed */
+  left: 290px; /* Adjust as needed */
+  width: 100%; /* Ensure it fits the div */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Apply rounded corners */
+  z-index: 9; /* Ensure it's on top */
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.member6 {
+  position: absolute; /* Position relative to the parent div */
+  top: 10px; /* Adjust as needed */
+  left: 290px; /* Adjust as needed */
+  width: 100%; /* Ensure it fits the div */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Apply rounded corners */
+  z-index: 9; /* Ensure it's on top */
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.hidden-text {
+  visibility: hidden;
+  top: 25px;
+  position: relative;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s ease-in-out; /* Delay visibility to match expansion */
+}
+
+/* Apply the expand effect when hovering */
+.timeline ul li:hover div {
+  max-height: 300px; /* Expanded height */
+  padding: 20px; /* Increased padding */
+}
+
+/* Show the hidden text when hovering */
+.timeline ul li:hover div .hidden-text {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* Remove delay for showing text */
+}
+
+
+
+.streamsection {
+  position: relative;
+   padding: 20px; /* Add some padding inside the border */
+   margin: 20px 0; /* Space between sections */
+   border-radius: 50px; /* Rounded corners */
+   background-color: transparent; /* White background for clarity */
+   opacity: 100%;
+   background-color: #00000060; /* White background for clarity */
+   box-shadow:0 0 12px rgb(255, 255, 4);
+z-index:998;
+top:-320px;
+max-height: 500px;
+ }
+
+
+
+
+ .social-icons69{
+   position: relative;
+  gap: 10px;
+  margin-top: 10px;
+  padding-right: 0%;
+  border-radius: 50%;
+  width: 200px;
+  top: -22px;
+  left: 17.35%;
+  transform: translate(-50%, 50%);
+  z-index: 9;
+  opacity: 1; /* Start as invisible */
+  width: 300px; /* Circle size */
+  height: 40px;
+ }
+
+ .livestreamgraph  {
+  position: relative;
+  max-width: 30%; /* Controls the width of the text */
+  vertical-align: middle;
+  line-height: 1.6; /* Adds space between lines of text */
+  color:white;
+top: 0px;
+left: 5.55%;
+}
+
+.livestreamgraphic {
+  position: relative;
+  max-width: 30%; /* Controls the width of the text */
+  vertical-align: middle;
+  line-height: 1.6; /* Adds space between lines of text */
+  color:white;
+top: -15px;
+left: 5.55%;
+}
+
+.livestreamgraphics {
+  position: relative;
+  max-width: 30%; /* Controls the width of the text */
+  vertical-align: middle;
+  line-height: 1.6; /* Adds space between lines of text */
+  color:white;
+top: 0px;
+left: 5.55%;
+}
+
+
+/* Style for the Start button */
+.btn-switch2 {
+  position: absolute;
+  background-color: transparent; /* Button color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size */
+  font-family: "Quicksand", sans-serif; /* Font style */
+  border: 2px solid #ffffff; /* Border for button */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  left: 23%;
+  top: 65%;
+  z-index: 999; /* Ensure it's above other elements */
+  pointer-events: all; 
+
+  animation: fade-up 2s ease-out forwards; /* Apply fade-up animation */
+}
+
+
+/* Keyframes for fade-up effect */
+@keyframes fade-up {
+
+  from{
+
+    opacity: 0; /* Initially hide the button */
+    transform: translateY(20%); /* Start from underneath */
+  }
+  to {
+    opacity: 1; /* Fade the element in */
+    transform: translateY(0); /* Move to its original position */
+  }
+}
+
+
+.btn-switch2:hover {
+  box-shadow: 0px 0px 15px rgb(255, 234, 0);
+  color:rgb(255, 255, 255); /* Change text color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+
+
+.introstream{
+  position: relative;
+  height: 40%;
+  width: 40%;
+  bottom: 310px;
+  left: 600px;
+}
+
+.livestreamFrame1{
+  bottom: 340px;
+  left: 600px;
+  position: relative;
+}
+
+.livestreamFrame2{
+  bottom: 310px;
+  left: 600px;
+  position: relative;
+}
+
+.div-dec{
+  background-color: rgb(89, 90, 120);
+border-bottom-color: rgb(255, 178, 70);
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(255, 178, 70);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(255, 178, 70);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgb(255, 178, 70);
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: border-box;
+color: rgb(255, 178, 70);
+display: block;
+font-family: Poppins, sans-serif;
+font-size: 16.768px;
+font-weight: 400;
+height: 6px;
+line-height: normal;
+
+margin-bottom: 0px;
+margin-left: 19.75px;
+margin-right: 19.75px;
+margin-top: 20px;
+outline-color: rgb(255, 178, 70);
+outline-style: none;
+outline-width: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+text-align: center;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+width: 80px;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+position: relative;
+left: 597px;
+}
